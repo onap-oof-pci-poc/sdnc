@@ -1,0 +1,926 @@
+{
+  "cellList": [
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn1003",
+        "physicalCellId": 0,
+        "pnfName": "ncserver1007",
+        "sectorNumber": 0,
+        "latitude": "13.081907",
+        "longitude": "80.270862"
+      },
+      "neighbor": [
+        "Chn1006",
+        "Chn906",
+        "Chn1005",
+        "Chn905"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn1004",
+        "physicalCellId": 1,
+        "pnfName": "ncserver1007",
+        "sectorNumber": 0,
+        "latitude": "13.081907834579353425",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn1007",
+        "Chn1006",
+        "Chn906",
+        "Chn1005"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn1007",
+        "physicalCellId": 2,
+        "pnfName": "ncserver1007",
+        "sectorNumber": 0,
+        "latitude": "13.081907834579353425",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn1008",
+        "Chn908",
+        "Chn1007",
+        "Chn906",
+        "Chn1006",
+        "Chn907"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn1008",
+        "physicalCellId": 3,
+        "pnfName": "ncserver1007",
+        "sectorNumber": 0,
+        "latitude": "13.081907834579353425",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn1009",
+        "Chn1007",
+        "Chn1008",
+        "Chn908"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn1009",
+        "physicalCellId": 4,
+        "pnfName": "ncserver1007",
+        "sectorNumber": 0,
+        "latitude": "13.081907834579353425",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn1009",
+        "Chn909",
+        "Chn908",
+        "Chn1008"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn106",
+        "physicalCellId": 6,
+        "pnfName": "ncserver1001",
+        "sectorNumber": 0,
+        "latitude": "13.08011576666136853306",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn107",
+        "Chn207",
+        "Chn206",
+        "Chn205",
+        "Chn106"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn107",
+        "physicalCellId": 7,
+        "pnfName": "ncserver1001",
+        "sectorNumber": 0,
+        "latitude": "13.08011576666136853306",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn106",
+        "Chn108",
+        "Chn207",
+        "Chn107"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn108",
+        "physicalCellId": 8,
+        "pnfName": "ncserver1001",
+        "sectorNumber": 0,
+        "latitude": "13.08011576666136853306",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn108",
+        "Chn107",
+        "Chn209",
+        "Chn208",
+        "Chn207"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn205",
+        "physicalCellId": 10,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.08031488531892240996",
+        "longitude": "80.2708623733052343367"
+      },
+      "neighbor": [
+        "Chn106",
+        "Chn206",
+        "Chn205",
+        "Chn305"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn206",
+        "physicalCellId": 11,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.08031488531892240996",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn207",
+        "Chn306",
+        "Chn307",
+        "Chn305",
+        "Chn106",
+        "Chn205",
+        "Chn206"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn207",
+        "physicalCellId": 12,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.08031488531892240996",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn106",
+        "Chn207",
+        "Chn108",
+        "Chn206",
+        "Chn107",
+        "Chn208",
+        "Chn307"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn208",
+        "physicalCellId": 13,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.08031488531892240996",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn209",
+        "Chn108",
+        "Chn207",
+        "Chn308",
+        "Chn208",
+        "Chn307",
+        "Chn309"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn209",
+        "physicalCellId": 14,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.08031488531892240996",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn309",
+        "Chn208",
+        "Chn108",
+        "Chn209"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn305",
+        "physicalCellId": 15,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.0805140039764762867",
+        "longitude": "80.2708623733052343367"
+      },
+      "neighbor": [
+        "Chn206",
+        "Chn205",
+        "Chn306",
+        "Chn305",
+        "Chn405"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn306",
+        "physicalCellId": 16,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.0805140039764762868",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn306",
+        "Chn206",
+        "Chn307",
+        "Chn406",
+        "Chn305",
+        "Chn405",
+        "Chn407"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn307",
+        "physicalCellId": 17,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.0805140039764762868",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn307",
+        "Chn208",
+        "Chn206",
+        "Chn207",
+        "Chn306",
+        "Chn407",
+        "Chn308"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn308",
+        "physicalCellId": 18,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.0805140039764762868",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn208",
+        "Chn408",
+        "Chn308",
+        "Chn407",
+        "Chn307",
+        "Chn309",
+        "Chn409"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn309",
+        "physicalCellId": 19,
+        "pnfName": "ncserver1002",
+        "sectorNumber": 0,
+        "latitude": "13.0805140039764762868",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn308",
+        "Chn208",
+        "Chn309",
+        "Chn409",
+        "Chn209"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn405",
+        "physicalCellId": 20,
+        "pnfName": "ncserver1003",
+        "sectorNumber": 0,
+        "latitude": "13.0807131226340301636",
+        "longitude": "80.2708623733052343367"
+      },
+      "neighbor": [
+        "Chn406",
+        "Chn405",
+        "Chn305",
+        "Chn306"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn406",
+        "physicalCellId": 21,
+        "pnfName": "ncserver1003",
+        "sectorNumber": 0,
+        "latitude": "13.0807131226340301636",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn405",
+        "Chn306",
+        "Chn506",
+        "Chn406",
+        "Chn507",
+        "Chn407"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn407",
+        "physicalCellId": 22,
+        "pnfName": "ncserver1003",
+        "sectorNumber": 0,
+        "latitude": "13.0807131226340301635",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn306",
+        "Chn308",
+        "Chn507",
+        "Chn408",
+        "Chn406",
+        "Chn407",
+        "Chn307"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn408",
+        "physicalCellId": 23,
+        "pnfName": "ncserver1003",
+        "sectorNumber": 0,
+        "latitude": "13.0807131226340301636",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn508",
+        "Chn407",
+        "Chn409",
+        "Chn509",
+        "Chn408",
+        "Chn308",
+        "Chn507"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn409",
+        "physicalCellId": 24,
+        "pnfName": "ncserver1003",
+        "sectorNumber": 0,
+        "latitude": "13.0807131226340301636",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn309",
+        "Chn408",
+        "Chn509",
+        "Chn308",
+        "Chn409"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn5010",
+        "physicalCellId": 0,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0809122412915840405",
+        "longitude": "80.2717247466104686733"
+      },
+      "neighbor": [
+        "Chn5010",
+        "Chn609",
+        "Chn6010",
+        "Chn509"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn506",
+        "physicalCellId": 1,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0809122412915840405",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn607",
+        "Chn406",
+        "Chn606",
+        "Chn507",
+        "Chn506"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn507",
+        "physicalCellId": 2,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0809122412915840405",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn508",
+        "Chn506",
+        "Chn607",
+        "Chn406",
+        "Chn507",
+        "Chn407",
+        "Chn408"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn508",
+        "physicalCellId": 3,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0809122412915840405",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn609",
+        "Chn608",
+        "Chn408",
+        "Chn607",
+        "Chn507",
+        "Chn508",
+        "Chn509"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn509",
+        "physicalCellId": 4,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0809122412915840405",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn409",
+        "Chn508",
+        "Chn509",
+        "Chn5010",
+        "Chn408",
+        "Chn609"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn6010",
+        "physicalCellId": 5,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0811113599491379175",
+        "longitude": "80.2717247466104686733"
+      },
+      "neighbor": [
+        "Chn5010",
+        "Chn709",
+        "Chn609",
+        "Chn7010",
+        "Chn6010"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn606",
+        "physicalCellId": 6,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0811113599491379175",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn606",
+        "Chn506",
+        "Chn707",
+        "Chn706",
+        "Chn705",
+        "Chn607"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn607",
+        "physicalCellId": 7,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0811113599491379175",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn507",
+        "Chn508",
+        "Chn607",
+        "Chn606",
+        "Chn608",
+        "Chn707",
+        "Chn506"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn608",
+        "physicalCellId": 8,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0811113599491379175",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn709",
+        "Chn607",
+        "Chn608",
+        "Chn707",
+        "Chn508",
+        "Chn609",
+        "Chn708"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn609",
+        "physicalCellId": 9,
+        "pnfName": "ncserver1004",
+        "sectorNumber": 0,
+        "latitude": "13.0811113599491379175",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn709",
+        "Chn509",
+        "Chn6010",
+        "Chn508",
+        "Chn608",
+        "Chn5010",
+        "Chn609"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn7010",
+        "physicalCellId": 10,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0813104786066917944",
+        "longitude": "80.2717247466104686733"
+      },
+      "neighbor": [
+        "Chn6010",
+        "Chn709",
+        "Chn809",
+        "Chn7010"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn705",
+        "physicalCellId": 10,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0813104786066917944",
+        "longitude": "80.2708623733052343367"
+      },
+      "neighbor": [
+        "Chn606",
+        "Chn705",
+        "Chn805",
+        "Chn706"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn706",
+        "physicalCellId": 11,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0813104786066917944",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn805",
+        "Chn707",
+        "Chn806",
+        "Chn606",
+        "Chn706",
+        "Chn705",
+        "Chn807"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn707",
+        "physicalCellId": 12,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0813104786066917944",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn607",
+        "Chn707",
+        "Chn708",
+        "Chn608",
+        "Chn807",
+        "Chn606",
+        "Chn706"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn708",
+        "physicalCellId": 13,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0813104786066917944",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn809",
+        "Chn707",
+        "Chn608",
+        "Chn708",
+        "Chn709",
+        "Chn807",
+        "Chn808"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn709",
+        "physicalCellId": 14,
+        "pnfName": "ncserver1005",
+        "sectorNumber": 0,
+        "latitude": "13.0813104786066917944",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn709",
+        "Chn609",
+        "Chn708",
+        "Chn608",
+        "Chn7010",
+        "Chn6010",
+        "Chn809"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn805",
+        "physicalCellId": 15,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0815095972642456715",
+        "longitude": "80.2708623733052343367"
+      },
+      "neighbor": [
+        "Chn705",
+        "Chn806",
+        "Chn805",
+        "Chn706",
+        "Chn905"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn806",
+        "physicalCellId": 16,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0815095972642456715",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn807",
+        "Chn905",
+        "Chn706",
+        "Chn906",
+        "Chn805",
+        "Chn806",
+        "Chn907"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn807",
+        "physicalCellId": 17,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0815095972642456715",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn706",
+        "Chn807",
+        "Chn806",
+        "Chn907",
+        "Chn707",
+        "Chn708",
+        "Chn808"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn808",
+        "physicalCellId": 18,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0815095972642456715",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn809",
+        "Chn909",
+        "Chn907",
+        "Chn808",
+        "Chn807",
+        "Chn908",
+        "Chn708"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn809",
+        "physicalCellId": 19,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0815095972642456715",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn709",
+        "Chn708",
+        "Chn808",
+        "Chn7010",
+        "Chn809",
+        "Chn909"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn905",
+        "physicalCellId": 20,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0817087159217995481",
+        "longitude": "80.2708623733052343367"
+      },
+      "neighbor": [
+        "Chn805",
+        "Chn906",
+        "Chn905",
+        "Chn1005",
+        "Chn806"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn906",
+        "physicalCellId": 21,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0817087159217995481",
+        "longitude": "80.271034847966281204"
+      },
+      "neighbor": [
+        "Chn906",
+        "Chn1006",
+        "Chn1007",
+        "Chn806",
+        "Chn907",
+        "Chn1005",
+        "Chn905"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn907",
+        "physicalCellId": 22,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0817087159217995481",
+        "longitude": "80.2712073226273280715"
+      },
+      "neighbor": [
+        "Chn806",
+        "Chn906",
+        "Chn807",
+        "Chn808",
+        "Chn1007",
+        "Chn908",
+        "Chn907"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn908",
+        "physicalCellId": 23,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0817087159217995481",
+        "longitude": "80.2713797972883749386"
+      },
+      "neighbor": [
+        "Chn907",
+        "Chn1009",
+        "Chn909",
+        "Chn808",
+        "Chn1008",
+        "Chn1007",
+        "Chn908"
+      ]
+    },
+    {
+      "Cell": {
+        "networkId": "jio",
+        "nodeId": "Chn909",
+        "physicalCellId": 24,
+        "pnfName": "ncserver1006",
+        "sectorNumber": 0,
+        "latitude": "13.0817087159217995481",
+        "longitude": "80.2715522719494218057"
+      },
+      "neighbor": [
+        "Chn809",
+        "Chn808",
+        "Chn909",
+        "Chn1009",
+        "Chn908"
+      ]
+    }
+  ]
+}
