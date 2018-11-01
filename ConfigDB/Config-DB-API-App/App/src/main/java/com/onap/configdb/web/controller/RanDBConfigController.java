@@ -105,6 +105,7 @@ public class RanDBConfigController {
 
 		for (String id : CellIdList) {
 			NbrList nbrListObj = new NbrList();
+			id =  id.trim();
 			Long pciValue = cellRepository.findPciValueByCellId(id);
 			nbrListObj.setCellId(id);
 			nbrListObj.setPciValue(pciValue);
