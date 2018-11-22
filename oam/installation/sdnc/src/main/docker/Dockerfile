@@ -1,6 +1,6 @@
 # Base ubuntu with added packages needed for open ecomp
 # FROM onap/ccsdk-odlsli-image:${ccsdk.docker.version}
-FROM oof-pci/ccsdk-odlsli-image:0.3.2-SNAPSHOT
+FROM oof-pci/ccsdk-odlsli-image:0.3.2
 
 MAINTAINER SDN-C Team (sdnc@lists.onap.org)
 
@@ -14,7 +14,6 @@ ENV SDNC_NORTHBOUND_REPO mvn:org.onap.sdnc.northbound/sdnc-northbound-all/${sdnc
 ENV SDNC_KEYSTORE ${sdnc.keystore}
 ENV SDNC_KEYPASS ${sdnc.keypass}
 ENV SDNC_SECUREPORT ${sdnc.secureport}
-
 
 
 # imstall ssl and java certificates
@@ -38,8 +37,8 @@ RUN rsync -a /tmp/system $ODL_HOME && rm -rf /tmp/system
 
 # Add SDNC repositories to boot repositories
 RUN cp $ODL_HOME/etc/org.apache.karaf.features.cfg $ODL_HOME/etc/org.apache.karaf.features.cfg.orig
-RUN cat $ODL_HOME/etc/org.apache.karaf.features.cfg.orig | sed -e "\|featuresRepositories|s|$|,${SDNC_NORTHBOUND_REPO},${SDNR_NORTHBOUND_REPO}|" > $ODL_HOME/etc/org.apache.karaf.features.cfg.1
-RUN cat $ODL_HOME/etc/org.apache.karaf.features.cfg.1 | sed -e "\|featuresBoot=config|s|$|,sdnc-northbound-all,sdnr-northbound-all|" > $ODL_HOME/etc/org.apache.karaf.features.cfg
+RUN cat $ODL_HOME/etc/org.apache.karaf.features.cfg.orig | sed -e "\|featuresRepositories|s|$|,${SDNC_NORTHBOUND_REPO}|" > $ODL_HOME/etc/org.apache.karaf.features.cfg.1
+RUN cat $ODL_HOME/etc/org.apache.karaf.features.cfg.1 | sed -e "\|featuresBoot=config|s|$|,sdnc-northbound-all|" > $ODL_HOME/etc/org.apache.karaf.features.cfg
 
 # Secure with TLS
 RUN echo org.osgi.service.http.secure.enabled=true >> $ODL_HOME/etc/custom.properties
@@ -47,6 +46,7 @@ RUN echo org.osgi.service.http.secure.port=$SDNC_SECUREPORT >> $ODL_HOME/etc/cus
 RUN echo org.ops4j.pax.web.ssl.keystore=$SDNC_STORE_DIR/$SDNC_KEYSTORE >> $ODL_HOME/etc/custom.properties
 RUN echo org.ops4j.pax.web.ssl.password=$SDNC_KEYPASS >> $ODL_HOME/etc/custom.properties
 RUN echo org.ops4j.pax.web.ssl.keypassword=$SDNC_KEYPASS >> $ODL_HOME/etc/custom.properties
+
 
 # ENTRYPOINT exec /opt/opendaylight/current/bin/karaf
 EXPOSE 8181
