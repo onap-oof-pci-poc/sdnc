@@ -1,0 +1,720 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "SDNC ConfigDB API",
+    "version": "4.0.0",
+    "title": "SDNC ConfigDB  API",
+    "contact": {
+      "name": "Devendra Chauhan",
+      "email": "devendra.chauhan@techmahindra.com"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "ran-db-config-controller",
+      "description": "Ran DB Config Controller"
+    }
+  ],
+  "paths": {
+    "/api/sdnc-config-db/v4/createNbr/{cellId}": {
+      "put": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "createNbr",
+        "operationId": "createNbrUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "createNbrRequest",
+            "description": "createNbrRequest",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NbrObj"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CellNbrInfoResponse"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/deleteNbr/{cellId}/{targetCellId}": {
+      "delete": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "deleteNbr",
+        "operationId": "deleteNbrUsingDELETE",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "targetCellId",
+            "in": "path",
+            "description": "targetCellId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/getCell/{cellId}": {
+      "get": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "getCell",
+        "operationId": "getCellUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CellObj"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/getCellList/{networkId}/{ts}": {
+      "get": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "getCellList",
+        "operationId": "getCellListUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "networkId",
+            "in": "path",
+            "description": "networkId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ts",
+            "in": "path",
+            "description": "ts",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/getNbrCellsNetwork/{networkId}": {
+      "get": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "getNbrCellsNetwork",
+        "operationId": "getNbrCellsNetworkUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "networkId",
+            "in": "path",
+            "description": "networkId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/NbrCellsNetworkResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/getNbrList/{cellId}/{ts}": {
+      "get": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "getNbrList",
+        "operationId": "getNbrListUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/NbrListResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/getPCI/{cellId}/{ts}": {
+      "get": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "getPCI",
+        "operationId": "getPCIUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ts",
+            "in": "path",
+            "description": "ts",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/getPnfId/{cellId}/{ts}": {
+      "get": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "getPnfId",
+        "operationId": "getPnfIdUsingGET",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ts",
+            "in": "path",
+            "description": "ts",
+            "required": true,
+            "type": "string",
+            "format": "date-time"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Result"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/insertData": {
+      "put": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "insertCellData",
+        "operationId": "insertCellDataUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "cellInputPayload",
+            "description": "cellInputPayload",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CellInputPayload"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/modifyNbrHO/{cellId}/{targetCellId}": {
+      "patch": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "modifyNbrHo",
+        "operationId": "modifyNbrHoUsingPATCH",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "targetCellId",
+            "in": "path",
+            "description": "targetCellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "fields",
+            "description": "fields",
+            "required": true,
+            "schema": {
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/modifyPci/{cellId}": {
+      "patch": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "modifyNbrPci",
+        "operationId": "modifyNbrPciUsingPATCH",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "fields",
+            "description": "fields",
+            "required": true,
+            "schema": {
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/api/sdnc-config-db/v4/modifyPnfId/{cellId}": {
+      "patch": {
+        "tags": [
+          "ran-db-config-controller"
+        ],
+        "summary": "modifyPnfId",
+        "operationId": "modifyPnfIdUsingPATCH",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "cellId",
+            "in": "path",
+            "description": "cellId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "fields",
+            "description": "fields",
+            "required": true,
+            "schema": {
+              "type": "object"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CellInputPayload": {
+      "type": "object",
+      "properties": {
+        "cellList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CellObj"
+          }
+        }
+      }
+    },
+    "NbrList": {
+      "type": "object",
+      "properties": {
+        "ho": {
+          "type": "boolean"
+        },
+        "pciValue": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "targetCellId": {
+          "type": "string"
+        }
+      }
+    },
+    "CellNbrInfoResponse": {
+      "type": "object",
+      "properties": {
+        "cellId": {
+          "type": "string"
+        },
+        "ho": {
+          "type": "boolean"
+        },
+        "targetCellId": {
+          "type": "string"
+        }
+      }
+    },
+    "CellObj": {
+      "type": "object",
+      "properties": {
+        "Cell": {
+          "$ref": "#/definitions/CellData"
+        },
+        "neighbor": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "NbrListResponse": {
+      "type": "object",
+      "properties": {
+        "cellId": {
+          "type": "string"
+        },
+        "nbrList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NbrList"
+          }
+        }
+      }
+    },
+    "NbrObj": {
+      "type": "object",
+      "properties": {
+        "ho": {
+          "type": "boolean"
+        },
+        "targetCellId": {
+          "type": "string"
+        }
+      }
+    },
+    "CellData": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "networkId": {
+          "type": "string"
+        },
+        "nodeId": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "physicalCellId": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "pnfId": {
+          "type": "string"
+        },
+        "sectorNumber": {
+          "type": "string"
+        }
+      }
+    },
+    "NbrCellsNetworkResponse": {
+      "type": "object",
+      "properties": {
+        "cellsNbrList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NbrListResponse"
+          }
+        },
+        "networkId": {
+          "type": "string"
+        }
+      }
+    },
+    "Result": {
+      "type": "object",
+      "properties": {
+        "attribute-name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
